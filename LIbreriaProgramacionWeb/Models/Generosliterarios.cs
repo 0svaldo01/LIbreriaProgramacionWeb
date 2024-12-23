@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LIbreriaProgramacionWeb.Models;
+namespace LibreriaProgramacionWeb.Models;
 
 public partial class Generosliterarios
 {

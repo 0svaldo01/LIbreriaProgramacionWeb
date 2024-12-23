@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LIbreriaProgramacionWeb.Models;
+namespace LibreriaProgramacionWeb.Models;
 
 public partial class Libros
 {
@@ -9,11 +9,15 @@ public partial class Libros
 
     public string Titulo { get; set; } = null!;
 
-    public string Autor { get; set; } = null!;
+    public string Descripcion { get; set; } = null!;
 
     public int? AñoPublicacion { get; set; }
 
     public int? IdGenero { get; set; }
+
+    public int? IdAutor { get; set; }
+
+    public virtual Autores? IdAutorNavigation { get; set; }
 
     public virtual Generosliterarios? IdGeneroNavigation { get; set; }
 }
